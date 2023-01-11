@@ -17,11 +17,92 @@
 <body>
     <main>
         <h1>Weather Dashboard</h1>
-        <div id="weather">
-            <div id="description"></div>
-            <h1 id="temp"></h1>
-            <div id="location"></div>
+        <div id="wrapper">
+
+            <div id="searchbar">
+                <h3>Search for a City:</h3>
+                <input type="text" id="input" placeholder="Enter City Name"><button id="search">Search</button>
+            </div>
+
+            <div id="weather">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 id="location"></h5>
+                        <p id="temp"></p>
+                    </div>
+                    <div class="list-group list-group-flush">
+                        <p id="wind-speed"></p>
+                    </div>
+                    <div>
+                        <p id="humidity"></p>
+                    </div>
+                    <div class="card-body"></div>
+                </div>
+            </div>
+
         </div>
+
+
+        <aside>
+
+            <hr>
+            <div id="history">
+                <h3>Search History:</h3>
+            </div>
+        </aside>
+
+        <div class="col2">
+            <section id="current"></section>
+            <section>
+                <h3></h3>
+                <section id="forecast"></section>
+            </section>
+        </div>
+
+        <div id="weeklyforecast">
+            <div class="container-fluid text-center">
+                <h3>5 day forecast</h3><br>
+                <div class="row">
+                    <div class="kontribusi col-sm-2 col-sm-offset-1">
+                        <div class="card card-block text-xs-center">
+                            <h4 class="card-title"><a href="#" class="btn btn-danger btn-block">Tomorrow Placeholder</a>
+                            </h4>
+                            <p class="card-text">Tomorrow Weather Placeholder</p>
+                        </div>
+                    </div>
+                    <div class="kontribusi col-sm-2">
+                        <div class="card card-block text-xs-center">
+                            <h4 class="card-title"><a href="#" class="btn btn-danger btn-block">Day 2 Placeholder</a>
+                            </h4>
+                            <p class="card-text">Day 2 Weather Placeholder</p>
+                        </div>
+                    </div>
+                    <div class="kontribusi col-sm-2">
+                        <div class="card card-block text-xs-center">
+                            <h4 class="card-title"><a href="#" class="btn btn-danger btn-block">Day 3 Placeholder</a>
+                            </h4>
+                            <p class="card-text">Day 3 Weather Placeholder</p>
+                        </div>
+                    </div>
+                    <div class="kontribusi col-sm-2">
+                        <div class="card card-block text-xs-center">
+                            <h4 class="card-title"><a href="#" class="btn btn-danger btn-block">Day 4 Placeholder</a>
+                            </h4>
+                            <p class="card-text">Day 4 Weather Placeholder</p>
+                        </div>
+                    </div>
+                    <div class="kontribusi col-sm-2">
+                        <div class="card card-block text-xs-center">
+                            <h4 class="card-title"><a href="#" class="btn btn-danger btn-block">Day 5 Placeholder</a>
+                            </h4>
+                            <p class="card-text">Day 5 Weather Placeholder</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </main>
     <script src="./Assets/script.js"></script>
 </body>
